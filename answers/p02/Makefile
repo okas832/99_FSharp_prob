@@ -1,8 +1,8 @@
 CC=fsharpc
-TARGET=p02.fs
+TARGET=$(wildcard *.fs)
 
 all:
 	$(CC) $(TARGET)
 
 clean:
-	rm *.dll *.exe
+	rm -f *.dll *.exe
